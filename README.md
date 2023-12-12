@@ -1,5 +1,7 @@
 # 3205-app
 
-
-- npm run build
-- npm start
+## Start instructions
+- install packages
+  ``` npm run build ```
+- start app
+  ``` npm start ```
