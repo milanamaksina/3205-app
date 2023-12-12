@@ -1,0 +1,79 @@
+@import "../style/variables";
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.input-validation-container {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin: 5px 15px;
+    color: $color-red;
+    font-size: 12px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  line-height: 14px;
+  margin: 0 10px;
+  display: inline-block;
+
+  .required {
+    color: $color-red;
+    padding-left: 5px;
+  }
+}
+
+.input-wrapper label {
+  color: $color-light-grey;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 15px;
+  padding: 0 2px;
+  pointer-events: none;
+  background: $color-white;
+  transition: transform 100ms ease;
+  transform: translateY(-20px);
+}
+
+.input-wrapper input {
+  min-width: 360px;
+  font-size: 13px;
+  color: $color-dark-grey;
+  outline: none;
+  border: 1px solid $color-light-grey;
+  padding: 14px 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.input-wrapper input:invalid + label {
+  transform: translateY(0);
+}
+
+.input-wrapper input:focus {
+  border-color: $color-blue;
+}
+
+.input-wrapper input:focus + label {
+  color: $color-blue;
+  transform: translateY(-20px);
+}
+
+.submit-btn {
+  margin: 0 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background: $color-blue;
+  color: $color-white;
+  border: 0;
+  font-weight: 600;
+}

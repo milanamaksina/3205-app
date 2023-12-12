@@ -1,0 +1,18 @@
+@import "../../style/variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 10% auto;
+  border-radius: 15px;
+  background-color: $color-white;
+  height: 70vh;
+
+  h2 {
+    color: $color-medium-grey;
+    margin: 0;
+  }
+}
