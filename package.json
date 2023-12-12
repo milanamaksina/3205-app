@@ -12,6 +12,7 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
+	"build": "npm install && cd client && npm install",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && tsc && node dist/index.js",
     "client": "npm start --prefix client"
